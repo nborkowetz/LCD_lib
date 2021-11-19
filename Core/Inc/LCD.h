@@ -18,19 +18,18 @@
 /*****************************************************************************************
  * PUBLIC CONSTANTS
  *****************************************************************************************/
-#define DATA_SIZE 8   //add 4 bit option
+#define LCD_DATA_SIZE 8   // 4 bit option
 
 
 /*****************************************************************************************
  * TYPES PORTING
  *****************************************************************************************/
-#define LCD_PORT_TYPE GPIO_TypeDef*
+#define DELAY(time) HAL_Delay(time)
 
+#define LCD_PORT_TYPE GPIO_TypeDef*
 #define LCD_PIN_TYPE uint16_t
 
-/*****************************************************************************************
- * PUBLIC TYPES
- *****************************************************************************************/
+
 typedef enum{
 	LCD_4_BIT_MODE,
 	LCD_8_BIT_MODE
@@ -54,8 +53,8 @@ typedef enum{
 		LCD_PIN_TYPE  CE_pin;
 
 		//data bit
-		LCD_PORT_TYPE Data_ports[DATA_SIZE];
-		LCD_PIN_TYPE  Data_pins[DATA_SIZE];
+		LCD_PORT_TYPE Data_ports[LCD_DATA_SIZE];
+		LCD_PIN_TYPE  Data_pins[LCD_DATA_SIZE];
 	}LCD_t;
 
 #else
@@ -76,7 +75,7 @@ typedef enum{
 		LCD_PIN_TYPE  CE_pin;
 
 		//data bit
-		LCD_PIN_TYPE  Data_pins[DATA_SIZE];
+		LCD_PIN_TYPE  Data_pins[LCD_DATA_SIZE];
 	}LCD_t;
 #endif
 
@@ -96,15 +95,15 @@ typedef enum{
 					 LCD_PIN_TYPE  RW_pin,
 					 LCD_PORT_TYPE CE_port,
 					 LCD_PIN_TYPE  CE_pin,
-					 LCD_PORT_TYPE Data_ports[DATA_SIZE],
-					 LCD_PIN_TYPE  Data_pins[DATA_SIZE]);
+					 LCD_PORT_TYPE Data_ports[LCD_DATA_SIZE],
+					 LCD_PIN_TYPE  Data_pins[LCD_DATA_SIZE]);
 
 	#else
 		LCD_t LCD_create(LCD_PORT_TYPE LCD_port,
 						 LCD_PIN_TYPE  RS_pin,
 						 LCD_PIN_TYPE  RW_pin,
 						 LCD_PIN_TYPE  CE_pin,
-						 LCD_PIN_TYPE  Data_pins[DATA_SIZE]);
+						 LCD_PIN_TYPE  Data_pins[LCD_DATA_SIZE]);
 	#endif
 
 	/**

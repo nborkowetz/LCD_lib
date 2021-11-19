@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "LCD.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -86,7 +86,21 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
+  LCD_t lcd;
 
+  const char string[] = "hi";
+
+  GPIO_TypeDef *dataPorts[] = {D0_GPIO_Port, D1_GPIO_Port, D2_GPIO_Port, D3_GPIO_Port, D4_GPIO_Port, D5_GPIO_Port, D6_GPIO_Port, D7_GPIO_Port };
+  uint16_t dataPins[]       = {D0_Pin, D1_Pin, D2_Pin, D3_Pin, D4_Pin, D5_Pin, D6_Pin, D7_Pin};
+
+  lcd = LCD_create(RS_GPIO_Port, RS_Pin,
+				   R_W_GPIO_Port, R_W_Pin,
+  				   CE_GPIO_Port, CE_Pin,
+  				   dataPorts,    dataPins);
+
+  LCD_init(&lcd);
+
+  LCD_write_string(&lcd, string);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -96,6 +110,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+
   }
   /* USER CODE END 3 */
 }
