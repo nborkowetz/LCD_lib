@@ -1,0 +1,36 @@
+!SESSION 2021-11-23 10:52:49.900 -----------------------------------------------
+eclipse.buildId=Version 1.6.1
+java.version=11.0.9.1
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=it_CH
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-11-23 10:53:12.405
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-11-23 10:53:12.474
+!MESSAGE Log4j initialized with config file C:\Users\semch\Desktop\SUPSI\Progetto di semestre\Firmware\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-11-23 10:53:15.267
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-11-23 10:53:16.355
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+!SESSION 2021-11-23 10:57:06.407 -----------------------------------------------
+eclipse.buildId=Version 1.6.1
+java.version=11.0.9.1
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=it_CH
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\semch\Desktop\SUPSI\Progetto di semestre\Firmware
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-11-23 10:57:10.985
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-11-23 10:57:11.038
+!MESSAGE Log4j initialized with config file C:\Users\semch\Desktop\SUPSI\Progetto di semestre\Firmware\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-11-23 10:57:14.094
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-11-23 10:57:15.230
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
