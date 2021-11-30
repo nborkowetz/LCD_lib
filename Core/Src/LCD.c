@@ -157,6 +157,7 @@ void LCD_init(LCD_t *lcd){
 	LCD_Send_Command(lcd, SET_CURSOR_HOME_CMD);
 	LCD_Send_Command(lcd, DISPLAY_ON_CURSOR_ON_CMD);
 	LCD_Send_Command(lcd, ENTRY_MODE_SET_CMD);
+	LCD_clear(lcd);
 }
 
 

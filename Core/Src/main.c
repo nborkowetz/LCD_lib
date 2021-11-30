@@ -88,7 +88,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
   LCD_t lcd;
 
-  const char string[] = "hi";
+  const char string[] = "Hello";
 
   GPIO_TypeDef *dataPorts[] = {D0_GPIO_Port, D1_GPIO_Port, D2_GPIO_Port, D3_GPIO_Port, D4_GPIO_Port, D5_GPIO_Port, D6_GPIO_Port, D7_GPIO_Port };
   uint16_t dataPins[]       = {D0_Pin, D1_Pin, D2_Pin, D3_Pin, D4_Pin, D5_Pin, D6_Pin, D7_Pin};
